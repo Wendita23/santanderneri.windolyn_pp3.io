@@ -21,6 +21,17 @@
     transform: translate(-50%, -50%);
     color: white;
 }
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+body {
+    box-sizing: border-box;
+}
 /* about section image css */
 .imageAboutPage {
     width: 100%;
@@ -48,7 +59,6 @@
 .navbarScroll.navbarDark {
     background-color: black;
 }
-
 
 	.video-item {
 		margin-bottom: 30px;
@@ -83,10 +93,11 @@ button {
 }
 #my-works {
     margin-bottom: 0px;
-    background-color: darkgray
 }
 	
-#portfolio
+#portfolio {
+    width: 100%;
+}
 
 	&.play {
 		background: darkgreen;
