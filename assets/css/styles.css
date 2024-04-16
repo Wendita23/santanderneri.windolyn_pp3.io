@@ -194,8 +194,9 @@ section {
 }
 /* footer styling */
 #footer {
-    background-color: #808080;
+    background-color: #272626;
     text-align: center;
+    color:aliceblue;
 }
 /* spacing on all sections */
 #about, #services, #portfolio, #contact {
