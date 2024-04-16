@@ -11,7 +11,7 @@ window.onscroll = function() {
     }
 }
 
-const API_KEY = 'YOUR_API_KEY';
+const API_KEY = 'AIzaSyA8oXBCCRMY_REPjCuf3LlVOfMeSqF4ZeQ';
 const VIDEO_IDS = ['wvDB3ibuUg4','AlU3TX7DI4&t', 'FNb8YI1rXJw&t','tRSGwnngqD4&t', 'GyJi0_T6i5U', 'DDQxjOVz3wI&t'];
 
 // Loop through each video ID and fetch data for each video
@@ -35,3 +35,36 @@ VIDEO_IDS.forEach(videoId => {
             console.error('There was a problem with the fetch operation:', error);
         });
 });
+
+$(document).ready(function(){
+    // Activate Carousel
+    $("#album").carousel();
+      
+    // Enable Carousel Indicators
+    $(".active item").click(function(){
+      $("#album").carousel(0);
+    });
+    $(".item 2").click(function(){
+      $("#album").carousel(1);
+    });
+    $(".item 3").click(function(){
+      $("#album").carousel(2);
+    });
+    $(".item 4").click(function(){
+      $("#album").carousel(3);
+    });
+    $(".item 5").click(function(){
+        $("#album").carousel(4);
+    });
+    $(".item 6").click(function(){
+        $("#album").carousel(5);
+    });
+      
+    // Enable Carousel Controls
+    $(".left").click(function(){
+      $("#album").carousel("prev");
+    });
+    $(".right").click(function(){
+      $("#album").carousel("next");
+    });
+  });
