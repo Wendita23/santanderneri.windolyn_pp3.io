@@ -93,4 +93,18 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
     }
-    
+    import { Loader } from '@googlemaps/js-api-loader';
+
+const loader = new Loader({
+  apiKey: "AIzaSyA0QUcVcz_Akev7ODchAkv8sYrdNULCLNw",
+  version: "weekly",
+  libraries: ["places"]
+});
+
+const mapOptions = {
+  center: {
+    lat: 0,
+    lng: 0
+  },
+  zoom: 4
+};
